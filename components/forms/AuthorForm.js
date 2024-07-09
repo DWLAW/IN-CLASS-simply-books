@@ -42,7 +42,7 @@ function AuthorForm({ obj }) {
       createAuthor(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
         updateAuthor(patchPayload).then(() => {
-          router.push('/');
+          router.push('/authors');
         });
       });
     }
